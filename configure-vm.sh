@@ -1,9 +1,8 @@
 #!/bin/bash
 
-# install packages
+# Install packages
 sudo apt update -y
-sudo apt install git telnet bind9-utils net-tools bash-completion -y
-source /etc/profile.d/bash_completion.sh
+sudo apt install net-tools --no-install-recommends
 
-#Enable IP Forwarding
+# Enable IP Forwarding
 sudo sysctl -w net.ipv4.ip_forward=1
